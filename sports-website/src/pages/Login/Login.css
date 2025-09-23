@@ -1,0 +1,146 @@
+/* --- Global & Body Styles --- */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+  overflow: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* --- Main Page Container --- */
+.login-page {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #1e2125;
+  /* This creates the subtle hexagonal texture in the background */
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 30px 30px;
+  color: #fff;
+  padding: 20px;
+}
+
+/* --- Header & Logo --- */
+.login-header {
+  text-align: center;
+  margin-bottom: 40px; /* Space between header and the form */
+}
+
+.logo {
+  font-size: 2.5rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+.tagline {
+  font-size: 0.9rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  opacity: 0.8;
+  margin-top: 5px;
+}
+
+/* --- Central Login Area --- */
+.login-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 600px;  /* Adjust size as needed */
+  height: 600px; /* Must be same as width for a perfect circle */
+}
+
+/* The circular image background */
+.sports-circle {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-image: url('/path/to/your/sports-collage.jpg'); /* IMPORTANT: Replace this path */
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+}
+
+/* --- Login Form --- */
+.login-form-container {
+  position: absolute;
+  width: 400px; /* Form width */
+  padding: 40px;
+  background-color: #0d2137e6; /* Dark blue with some transparency */
+  backdrop-filter: blur(5px);
+  border-radius: 15px;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.form-options {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+  font-size: 0.8rem;
+  color: #ccc;
+}
+
+.form-options input[type="checkbox"] {
+  margin-right: 10px;
+  accent-color: #1abc9c; /* Color for the checkbox tick */
+}
+
+.login-btn {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  background-color: #27ae60; /* A nice shade of green */
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.login-btn:hover {
+  background-color: #2ecc71;
+}
+
+.form-footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.form-footer a {
+  color: #3498db;
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+
+.form-footer a:hover {
+  text-decoration: underline;
+}
